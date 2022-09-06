@@ -9,7 +9,7 @@ interface CheckedTaskState {
 
 // Define the initial state using that type
 const initialState: CheckedTaskState = {
-  value: "",
+  value: "undone",
 }
 
 export const checkedtaskSlice = createSlice({

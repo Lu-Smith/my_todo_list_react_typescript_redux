@@ -1,4 +1,6 @@
 import React, {FC, useState} from 'react';
+import { useAppDispatch } from '../hooks';
+import { doneTask } from '../../features/checkedtaskSlice';
 import { AddedTasksContainer, Input, TaskName, Button } from './styles/AddedTasks.styled';
 
 interface Props {
@@ -8,10 +10,13 @@ interface Props {
 const AddedTasks: FC<Props> = ({task}) => {
 
     const [checked, setChecked] = useState<boolean>(false);
+    const dispatch = useAppDispatch();
 
     const handleChecked = () => {
         if (checked === false) {
+            dispatch(doneTask("done"));
             setChecked(true);
+
         } else {
             setChecked(false);
         }
