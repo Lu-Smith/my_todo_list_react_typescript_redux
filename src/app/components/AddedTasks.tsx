@@ -1,33 +1,27 @@
-import React, {FC, useState} from 'react';
-import { useAppDispatch, useAppSelector } from '../hooks';
-import { doneTask } from '../../features/checkedtaskSlice';
-import { AddedTasksContainer, Input, TaskName, Button } from './styles/AddedTasks.styled';
+import React, {FC} from 'react';
+import {removeTask} from '../../features/newtaskSlice';
+import {useAppDispatch} from '../hooks';
+import {AddedTasksContainer, Input, TaskName, Button} from './styles/AddedTasks.styled';
 
 interface Props {
     task: string
+    index: number
 }
 
-const AddedTasks: FC<Props> = ({task}) => {
+const AddedTasks: FC<Props> = ({task, index}) => {
 
-    const [checked, setChecked] = useState<boolean>(false);
     const dispatch = useAppDispatch();
-    const checkedtask = useAppSelector((state) => state.checkedtask.value);
 
-    const handleChecked = () => {
-        if (checked === false) {
-            dispatch(doneTask("done"));
-            setChecked(true);
-        } else {
-            dispatch(doneTask("undone"));
-            setChecked(false);
-        }
-    }
+const handleRemoveClick = () => {
+   dispatch(removeTask(index));
+}
 
   return (
-    <AddedTasksContainer color={checkedtask}>
-          <Input type='checkbox' onClick={handleChecked}/>
+    <AddedTasksContainer>
+          <Input type='checkbox' />
           <TaskName>{task}</TaskName>
-          <Button className="material-symbols-outlined">delete</Button>
+          <Button className="material-symbols-outlined" onClick={handleRemoveClick}>delete</Button>
+          
     </AddedTasksContainer>
   )
 }

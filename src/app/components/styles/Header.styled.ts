@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
- background: #8ef6e4; 
- color: black;
+ background: ${props => props.color === "allundone" ? "transparent" : "black"};
+ color:  ${props => props.color === "allundone" ? "black" : "white"};
  padding: 10px 0;
  font-size: 20px;
  line-height: 50px;
@@ -18,7 +18,7 @@ export const Logo = styled.div`
 `
 
 export const Menu = styled.ul`
- width: 70%;
+ width: 50%;
  display: flex;
  flex-direction: row;
  align-items: center;
@@ -48,4 +48,10 @@ export const Input = styled.input`
     position: relative;
     top: 5px;
     left: 5px;
+`
+
+export const Congratulations = styled.div`
+     display: ${props => props.color === "allundone" ? "none" : ""};
+     width: 20%;
+     font-size: 25px;
 `

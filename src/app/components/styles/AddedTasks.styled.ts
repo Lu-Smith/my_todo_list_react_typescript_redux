@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const AddedTasksContainer = styled.div`
 
- background: ${props => props.color === "undone" ? "white" : "palevioletred"};
+ background: white;
  padding: 10px 0;
  font-size: 20px;
  line-height: 30px;

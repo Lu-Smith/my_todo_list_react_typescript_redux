@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+
 export const MainContainer = styled.div`
  background: #8ef6e4; 
  color: black;

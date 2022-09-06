@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import newtaskReducer from '../features/newtaskSlice';
-import checkedtaskReducer from '../features/checkedtaskSlice';
+import allcheckedtaskReducer from '../features/allcheckedtaskSlice';
 
 export const store = configureStore({
   reducer: {
     newtask: newtaskReducer,
-    checkedtask: checkedtaskReducer,
+    allcheckedtask: allcheckedtaskReducer,
   },
 })
 

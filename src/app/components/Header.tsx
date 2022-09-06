@@ -1,12 +1,31 @@
-import React, {FC} from 'react';
-import { HeaderContainer, Logo, Menu, Theme, Input} from './styles/Header.styled';
+import React, {FC, useState} from 'react';
+import { useAppDispatch, useAppSelector} from '../hooks';
+import { allDoneTasks } from '../../features/allcheckedtaskSlice';
+import { HeaderContainer, Logo, Menu, Theme, Input, Congratulations} from './styles/Header.styled';
 
 const Header: FC = () => {
+
+  const [allchecked, setAllChecked] = useState<boolean>(false);
+  const dispatch = useAppDispatch();
+  const allcheckedtask = useAppSelector((state) => state.allcheckedtask.value);
+  
+
+  const handleAllChecked = () => {
+      if (allchecked === false) {
+          dispatch(allDoneTasks("alldone"));
+          setAllChecked(true);
+      } else {
+          dispatch(allDoneTasks("allundone"));
+          setAllChecked(false);
+      }
+  }
+
   return (
-    <HeaderContainer>
+    <HeaderContainer color={allcheckedtask}>
         <Logo>
-            Todo List <Input type='checkbox' />
+            Todo List <Input type='checkbox' onClick={handleAllChecked}/>
         </Logo>
+        <Congratulations color={allcheckedtask}> Well Done 😄</Congratulations>
         <Menu>
             <Theme>Original</Theme>
             <Theme>Light</Theme>

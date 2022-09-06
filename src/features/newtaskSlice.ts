@@ -21,9 +21,12 @@ export const newtaskSlice = createSlice({
     addTask: (state, action: PayloadAction<string>) => {
       state.value.push(action.payload);
     },
+    removeTask: (state, action: PayloadAction<number>) => {
+      state.value.splice(action.payload, 1);
+    },
   },
 })
 
-export const { addTask } = newtaskSlice.actions
+export const { addTask, removeTask } = newtaskSlice.actions
 
 export default newtaskSlice.reducer
