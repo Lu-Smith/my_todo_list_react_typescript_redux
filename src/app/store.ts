@@ -1,7 +1,9 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore } from '@reduxjs/toolkit';
+import newtaskReducer from '../features/newtaskSlice';
 
 export const store = configureStore({
   reducer: {
+    newtask: newtaskReducer,
 
   },
 })
