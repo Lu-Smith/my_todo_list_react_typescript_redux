@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
  background: ${props => props.color === "allundone" ? "transparent" : "black"};
- color:  ${props => props.color === "allundone" ? "black" : "white"};
+ color:  ${props => props.color === "allundone" ? "black" : "#efdfbf"};
  padding: 10px 0;
  font-size: 20px;
  line-height: 50px;
@@ -15,6 +15,7 @@ export const Logo = styled.div`
  width: 30%;
  font-family: 'Carter One', cursive;
  font-size: 30px;
+ text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 `
 
 export const Menu = styled.ul`
@@ -31,10 +32,12 @@ list-style: none;
 padding: 5px 15px;
 line-height: 30px;
 transition: all 200ms ease-in-out;
-background-color: #9896f1;
-border-radius: 20px;
+background-color: black;
+border-radius: 10px;
 margin-right: 5px;
-color: white;
+color: #ffe0e0;
+box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+;
 
 &:hover {
     font-weight: 600;
@@ -48,6 +51,7 @@ export const Input = styled.input`
     position: relative;
     top: 5px;
     left: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 `
 
 export const Congratulations = styled.div`

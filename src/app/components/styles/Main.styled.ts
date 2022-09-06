@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const MainContainer = styled.div`
- background: #8ef6e4; 
+ background: #fffafa;
  color: black;
  padding: 10px 0;
  font-size: 20px;
@@ -12,7 +12,7 @@ export const MainContainer = styled.div`
 
 export const NewTask = styled.div`
   margin-top: 20px;
-  background: #d59bf6;
+  background: #ffc0d0;
   padding: 20px 0;
 `
 

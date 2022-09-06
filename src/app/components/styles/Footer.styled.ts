@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.div`
- background: ${props => props.color === "allundone" ? "white" : "black"};
- color:  ${props => props.color === "allundone" ? "black" : "white"};
+ background: ${props => props.color === "allundone" ? "#efdfbf" : "black"};
+ color:  ${props => props.color === "allundone" ? "black" : "#efdfbf"};
  padding: 10px 0;
  font-size: 20px;
  line-height: 30px;
 
  a {
-    color: ${props => props.color === "allundone" ? "black" : "white"};
+    color: ${props => props.color === "allundone" ? "grey" : "#efdfbf"};
     text-decoration: none;
     font-weight: 600;
     transition: all 200ms ease-in-out;
@@ -16,7 +16,6 @@ export const FooterContainer = styled.div`
 
  a:hover {
     color: ${props => props.color === "allundone" ? "black" : "white"};
-    border-bottom: 2px solid #282A36;
  }
 `
 

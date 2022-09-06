@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const AddedTasksContainer = styled.div`
 
- background: ${props => props.color === "undone" ? "white" : "blue"};
+ background: ${props => props.color === "undone" ? "#ffe0e0" : "#efdfbf"};
  padding: 10px 0;
  font-size: 20px;
  line-height: 30px;
@@ -12,7 +12,7 @@ export const AddedTasksContainer = styled.div`
  align-items: center;
  justify-content: center;
  font-family: 'Indie Flower', cursive;
- border-bottom: 2px solid #d59bf6;
+ border-bottom: 2px solid #fffafa;
  width: 80%;
  margin: 0 auto;
 `
@@ -33,5 +33,6 @@ export const Button = styled.button`
     border: none;
     background: transparent;
     font-size: 40px;
-    color: #d59bf6;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 `
