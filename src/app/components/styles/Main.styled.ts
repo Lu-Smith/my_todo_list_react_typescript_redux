@@ -37,7 +37,3 @@ export const Button = styled.button`
 export const TasksList = styled.div`
   color: red;
 `
-
-export const AddedTasks = styled.div`
-  color: red;
-`
