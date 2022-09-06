@@ -36,5 +36,5 @@ export const Button = styled.button`
 `
 
 export const TasksList = styled.div`
-  color: red;
+  margin-top: 20px;
 `
