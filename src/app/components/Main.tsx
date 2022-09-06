@@ -12,7 +12,9 @@ const Main: FC = () => {
   
 
     const handleAddTask = () => {
-        dispatch(addTask)
+        if(!createTask) return;
+        dispatch(addTask(createTask));
+        setCreateTask("");
     }
 
   return (
