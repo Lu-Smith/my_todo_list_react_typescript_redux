@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, {FC, useState} from 'react';
 import { AddedTasksContainer, Input, TaskName, Button } from './styles/AddedTasks.styled';
 
 interface Props {
@@ -6,12 +6,18 @@ interface Props {
 }
 
 const AddedTasks: FC<Props> = ({task}) => {
+
+    const [checked, setChecked] = useState<boolean>(false);
+
+    const handleChecked = () => {
+        
+    }
+
   return (
     <AddedTasksContainer>
-        <Input type='checkbox' />
+        <Input type='checkbox' onClick={handleChecked}/>
         <TaskName>{task}</TaskName>
-        <Button className="material-symbols-outlined">delete</Button>
-        
+        <Button className="material-symbols-outlined">delete</Button>    
     </AddedTasksContainer>
   )
 }

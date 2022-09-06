@@ -6,6 +6,7 @@ export const MainContainer = styled.div`
  padding: 10px 0;
  font-size: 20px;
  line-height: 30px;
+ height: 87%;
 `
 
 export const NewTask = styled.div`
