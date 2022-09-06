@@ -39,6 +39,13 @@ color: white;
 &:hover {
     font-weight: 600;
 }
+`
 
-
+export const Input = styled.input`
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+    left: 5px;
 `

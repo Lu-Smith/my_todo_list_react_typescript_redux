@@ -1,11 +1,11 @@
 import React, {FC} from 'react';
-import { HeaderContainer, Logo, Menu, Theme} from './styles/Header.styled';
+import { HeaderContainer, Logo, Menu, Theme, Input} from './styles/Header.styled';
 
 const Header: FC = () => {
   return (
     <HeaderContainer>
         <Logo>
-            Todo List ✅
+            Todo List <Input type='checkbox' />
         </Logo>
         <Menu>
             <Theme>Original</Theme>

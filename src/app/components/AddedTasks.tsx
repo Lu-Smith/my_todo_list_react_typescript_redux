@@ -10,7 +10,11 @@ const AddedTasks: FC<Props> = ({task}) => {
     const [checked, setChecked] = useState<boolean>(false);
 
     const handleChecked = () => {
-        
+        if (checked === false) {
+            setChecked(true);
+        } else {
+            setChecked(false);
+        }
     }
 
   return (
