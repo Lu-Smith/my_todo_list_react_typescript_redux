@@ -1,8 +1,18 @@
-import React, {FC} from 'react'
+import React, {FC} from 'react';
+import { AddedTasksContainer, Input, TaskName, Button } from './styles/AddedTasks.styled';
 
-const AddedTasks: FC = () => {
+interface Props {
+    task: string
+}
+
+const AddedTasks: FC<Props> = ({task}) => {
   return (
-    <div>AddedTasks</div>
+    <AddedTasksContainer>
+        <Input type='checkbox' />
+        <TaskName>{task}</TaskName>
+        <Button className="material-symbols-outlined">delete</Button>
+        
+    </AddedTasksContainer>
   )
 }
 

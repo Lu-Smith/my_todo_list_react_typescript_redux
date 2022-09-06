@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import React, { FC, useState } from 'react';
 import { useAppDispatch, useAppSelector } from '../hooks';
 import { addTask } from '../../features/newtaskSlice';
 import AddedTasks from './AddedTasks';
@@ -11,7 +11,7 @@ const Main: FC = () => {
     const newtasks = useAppSelector((state) => state.newtask.value)
   
 
-    const handleAddTask = () => {
+    const handleAddTask = (): void => {
         if(!createTask) return;
         dispatch(addTask(createTask));
         setCreateTask("");
@@ -25,7 +25,7 @@ const Main: FC = () => {
         </NewTask>
         <TasksList>
             {newtasks.map((task: string, index:number) => {
-               return <AddedTasks key={index}/>
+               return <AddedTasks key={index} task={task}/>
             })}
         </TasksList>
     </MainContainer>
