@@ -8,7 +8,6 @@ export const HeaderContainer = styled.div`
  line-height: 50px;
  display: flex;
  flex-direction: row;
- align-items: center;
 `
 
 export const Logo = styled.div`
@@ -24,7 +23,6 @@ export const Menu = styled.ul`
  flex-direction: row;
  align-items: center;
  justify-content: end;
- padding-right: 30px;
 `
 
 export const Theme = styled.li`
@@ -36,11 +34,14 @@ background-color: black;
 border-radius: 10px;
 margin-right: 5px;
 color: #ffe0e0;
-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+cursor: pointer;
+box-shadow: 0 -5px 2px #ffc0d0;
 ;
 
 &:hover {
     font-weight: 600;
+    transform: translateY(-4px);
+    box-shadow: none;
 }
 `
 

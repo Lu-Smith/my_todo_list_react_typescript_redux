@@ -25,13 +25,13 @@ const Header: FC = () => {
         <Logo>
             Todo List <Input type='checkbox' onClick={handleAllChecked}/>
         </Logo>
-        <Congratulations color={allcheckedtask}> Well Done 😄</Congratulations>
         <Menu>
             <Theme>Original</Theme>
             <Theme>Light</Theme>
             <Theme>Dark</Theme>
             <Theme>Crazy</Theme>
         </Menu>
+        <Congratulations color={allcheckedtask}> Well Done 😄</Congratulations>
     </HeaderContainer>
   )
 }
