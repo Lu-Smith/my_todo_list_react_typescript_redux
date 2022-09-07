@@ -8,14 +8,14 @@ export const FooterContainer = styled.div`
  line-height: 30px;
 
  a {
-    color: ${props => props.color === "allundone" ? "grey" : "#efdfbf"};
+    color: ${props => props.color === "allundone" ? "black" : "#efdfbf"};
     text-decoration: none;
     font-weight: 600;
     transition: all 200ms ease-in-out;
  }
 
  a:hover {
-    color: ${props => props.color === "allundone" ? "black" : "white"};
+    color: ${props => props.color === "allundone" ? "#494949" : "white"};
  }
 `
 
