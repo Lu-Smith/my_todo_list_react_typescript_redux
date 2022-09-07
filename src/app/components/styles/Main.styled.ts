@@ -31,15 +31,22 @@ export const NewTask = styled.div`
    props.theme === "light" ? "#ffffff" : 
    props.theme === "dark" ? "black" : "#d22780"};
   padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`
+
+export const InputContainer = styled.div`
+ display: flex;
+ flex-direction: column;
 `
 
 export const Input = styled.input`
  padding: 10px 15px;
- border-top-left-radius: 10px;
- border-bottom-left-radius: 10px;
  border: none;
  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
  font-size: 20px;
+ width: 600px;
 `
 
 export const Button = styled.button`

@@ -38,7 +38,7 @@ export const Input = styled.input`
 export const TaskName = styled.div`
     font-size: 30px;
     margin-right: 10px;
-    width: 300px;
+    width: 800px;
     color: ${props => 
      props.theme === "original" ? "black" : 
      props.theme === "light" ? "#929aab" : 
