@@ -13,6 +13,7 @@ export const AddedTasksContainer = styled.div`
  justify-content: center;
  font-family: 'Indie Flower', cursive;
  border-bottom: 2px solid #fffafa;
+ border-radius: 10px;
  width: 80%;
  margin: 0 auto;
  `

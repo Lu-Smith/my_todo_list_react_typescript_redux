@@ -40,10 +40,10 @@ export const TasksList = styled.div`
   margin: 0 auto;
   margin-top: 30px;
   height: 660px;
-  width: 70%;
+  width: 80%;
   border: 4px solid #ffc0d0;
   background-color: #fffafa;
-  padding: 30px;
+  padding: 30px 0;
   border-radius: 20px;
   overflow-y: scroll;
 `
