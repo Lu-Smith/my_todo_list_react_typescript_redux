@@ -37,5 +37,13 @@ export const Button = styled.button`
 `
 
 export const TasksList = styled.div`
-  margin-top: 20px;
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 660px;
+  width: 70%;
+  border: 4px solid #ffc0d0;
+  background-color: #fffafa;
+  padding: 30px;
+  border-radius: 20px;
+  overflow-y: scroll;
 `

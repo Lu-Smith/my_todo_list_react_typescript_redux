@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.div`
- background: ${props => props.color === "allundone" ? "#efdfbf" : "black"};
+ background: ${props => props.color === "allundone" ? "#efdfbf" : "#ec729c"};
  color:  ${props => props.color === "allundone" ? "black" : "#efdfbf"};
  padding: 10px 0;
  font-size: 20px;

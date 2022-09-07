@@ -15,7 +15,7 @@ export const AddedTasksContainer = styled.div`
  border-bottom: 2px solid #fffafa;
  width: 80%;
  margin: 0 auto;
-`
+ `
 
 export const Input = styled.input`
     width: 30px;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
- background: ${props => props.color === "allundone" ? "transparent" : "black"};
+ background: ${props => props.color === "allundone" ? "transparent" : "#ec729c"};
  color:  ${props => props.color === "allundone" ? "black" : "#efdfbf"};
  padding: 10px 0;
  font-size: 20px;
