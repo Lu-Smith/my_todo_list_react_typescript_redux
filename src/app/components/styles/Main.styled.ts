@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const MainContainer = styled.div`
  background-color: ${props => 
- props.theme === "original" ? "#fffafa" : 
+ props.theme === "original" ? "#f8fcfb" : 
  props.theme === "light" ? "#f9f6f7" : 
  props.theme === "dark" ? "black" : "orange"};
  color: ${props => 
@@ -19,15 +19,15 @@ export const MainContainer = styled.div`
 export const NewTask = styled.div`
   margin-top: 20px;
   background: ${props => 
-   props.theme === "original" ? "#ffc0d0" : 
+   props.theme === "original" ? "#79d1c3" : 
    props.theme === "light" ? "#ffe8d6" : 
    props.theme === "dark" ? "#5f1854" : "#5e227f"};
   border-top: 10px dotted ${props => 
-   props.theme === "original" ? "black" : 
+   props.theme === "original" ? "#c9fdd7" : 
    props.theme === "light" ? "#ffffff" : 
    props.theme === "dark" ? "black" : "#7cbd1e"};
   border-bottom: 10px dotted ${props => 
-   props.theme === "original" ? "black" : 
+   props.theme === "original" ? "#c9fdd7" : 
    props.theme === "light" ? "#ffffff" : 
    props.theme === "dark" ? "black" : "#d22780"};
   padding: 20px 0;
@@ -52,7 +52,7 @@ export const Button = styled.button`
  font-weight: 600;
  cursor: pointer;
  background: ${props => 
-  props.theme === "original" ? "#ffe0e0" : 
+  props.theme === "original" ? "#c9fdd7" : 
   props.theme === "light" ? "#f9f6f7" : 
   props.theme === "dark" ? "black" : "#d22780"};
  color: ${props => 

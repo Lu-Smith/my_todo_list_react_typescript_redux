@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const AddedTasksContainer = styled.div`
 
  background: ${props => 
-  props.theme === "original" ? "#ffe0e0" : 
+  props.theme === "original" ? "#79d1c3" : 
   props.theme === "light" ? "white" : 
   props.theme === "dark" ? "black" : "#7cbd1e"};
  padding: 10px 0;
@@ -69,7 +69,7 @@ export const Button = styled.button`
 
     &:hover {
         color: ${props => 
-           props.theme === "original" ? "#ffc0d0" : 
+           props.theme === "original" ? "#c9fdd7" : 
            props.theme === "light" ? "#929aab" : 
            props.theme === "dark" ? "#efdfbf" : "#fd0054"};
 

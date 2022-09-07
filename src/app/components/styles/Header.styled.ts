@@ -31,7 +31,7 @@ padding: 5px 15px;
 line-height: 30px;
 transition: all 200ms ease-in-out;
 background-color: ${props => 
-props.theme === "original" ? "#ffe0e0" : 
+props.theme === "original" ? "#79d1c3" : 
 props.theme === "light" ? "#f9f6f7" : 
 props.theme === "dark" ? "black" : "orange"};
 border-radius: 10px;
