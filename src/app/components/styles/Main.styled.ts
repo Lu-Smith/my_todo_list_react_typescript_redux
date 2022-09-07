@@ -2,8 +2,14 @@ import styled from 'styled-components';
 
 
 export const MainContainer = styled.div`
- background: #fffafa;
- color: black;
+ background-color: ${props => 
+ props.theme === "original" ? "#fffafa" : 
+ props.theme === "light" ? "#f9f6f7" : 
+ props.theme === "dark" ? "black" : "orange"};
+ color: ${props => 
+ props.theme === "original" ? "black" : 
+ props.theme === "light" ? "#ff971d" : 
+ props.theme === "dark" ? "#00d1ff" : "#5e227f"};
  padding: 10px 0;
  font-size: 20px;
  line-height: 30px;
@@ -12,7 +18,18 @@ export const MainContainer = styled.div`
 
 export const NewTask = styled.div`
   margin-top: 20px;
-  background: #ffc0d0;
+  background: ${props => 
+   props.theme === "original" ? "#ffc0d0" : 
+   props.theme === "light" ? "#ffe8d6" : 
+   props.theme === "dark" ? "#163172" : "#5e227f"};
+  border-top: 10px dotted ${props => 
+   props.theme === "original" ? "black" : 
+   props.theme === "light" ? "#ffffff" : 
+   props.theme === "dark" ? "black" : "#7cbd1e"};
+  border-bottom: 10px dotted ${props => 
+   props.theme === "original" ? "black" : 
+   props.theme === "light" ? "#ffffff" : 
+   props.theme === "dark" ? "black" : "#d22780"};
   padding: 20px 0;
 `
 
@@ -34,6 +51,14 @@ export const Button = styled.button`
  font-size: 20px;
  font-weight: 600;
  cursor: pointer;
+ background: ${props => 
+  props.theme === "original" ? "#ffe0e0" : 
+  props.theme === "light" ? "#f9f6f7" : 
+  props.theme === "dark" ? "black" : "#d22780"};
+ color: ${props => 
+  props.theme === "original" ? "black" : 
+  props.theme === "light" ? "#929aab" : 
+  props.theme === "dark" ? "#00d1ff" : "#f8b500"};
 `
 
 export const TasksList = styled.div`
@@ -41,8 +66,14 @@ export const TasksList = styled.div`
   margin-top: 30px;
   height: 660px;
   width: 80%;
-  border: 4px solid #ffc0d0;
-  background-color: #fffafa;
+  border: 10px dotted ${props => 
+  props.theme === "original" ? "#efdfbf" : 
+  props.theme === "light" ? "white" : 
+  props.theme === "dark" ? "#3d6cb9" : "#d22780"};
+  background-color: ${props => 
+  props.theme === "original" ? "#faf6e9" : 
+  props.theme === "light" ? "#ffe8d6" : 
+  props.theme === "dark" ? "#163172" : "#1e56a0"};
   padding: 30px 0;
   border-radius: 20px;
   overflow-y: scroll;

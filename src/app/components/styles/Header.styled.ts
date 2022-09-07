@@ -38,10 +38,13 @@ border-radius: 10px;
 margin-right: 5px;
 color: ${props => 
 props.theme === "original" ? "black" : 
-props.theme === "light" ? "#ff971d" : 
-props.theme === "dark" ? "#00d1ff" : "#5e227f"};
+props.theme === "light" ? "#929aab" : 
+props.theme === "dark" ? "#00d1ff" : "white"};
 cursor: pointer;
-box-shadow: 0 -5px 2px #ffc0d0;
+box-shadow: 0 -5px 2px ${props => 
+  props.theme === "original" ? "black" : 
+  props.theme === "light" ? "#ffe8d6" : 
+  props.theme === "dark" ? "#163172" : "#7cbd1e"};
 ;
 
 &:hover {

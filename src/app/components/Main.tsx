@@ -17,14 +17,14 @@ const Main: FC = () => {
         dispatch(addTask(createTask));
         setCreateTask("");
     }
-
+    
     return (
-      <MainContainer>
-        <NewTask>
+      <MainContainer theme={changethemes}>
+        <NewTask theme={changethemes}>
             <Input type='text' value={createTask} placeholder='task name' onChange={(e) => setCreateTask(e.target.value)}/>
-            <Button onClick={handleAddTask}>Add</Button>
+            <Button onClick={handleAddTask} theme={changethemes}>Add</Button>
         </NewTask>
-        <TasksList>
+        <TasksList theme={changethemes}>
             {newtasks.map((task: string, index:number) => {
                return <AddedTasks key={index} task={task} index={index}/>
             })}
