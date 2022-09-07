@@ -97,6 +97,12 @@ export const TasksList = styled.div`
   border-radius: 20px;
   overflow-y: scroll;
 
+  @media (max-width: 720px) {
+    height: 620px;
+    width: 90%;
+    border-radius: 18px;
+  }
+
   @media (max-width: 480px) {
     height: 540px;
     width: 98%;

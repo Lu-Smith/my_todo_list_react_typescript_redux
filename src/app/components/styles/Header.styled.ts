@@ -20,7 +20,11 @@ export const Logo = styled.div`
    width: 25%;
  }
 
- @media (max-width: 480px) {
+ @media (max-width: 720px) {
+  font-size: 25px;
+ }
+
+ @media (max-width: 620px) {
    font-size: 18px;
    width: 30%;
  }
@@ -37,7 +41,7 @@ export const Menu = styled.ul`
   width: 50%;
  }
 
- @media (max-width: 480px) {
+ @media (max-width: 620px) {
    width: 70%;
  }
 `
@@ -70,10 +74,15 @@ box-shadow: 0 -5px 2px ${props =>
     box-shadow: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 720px) {
+    font-size: 17px;
+    padding: 3px 12px;
+    line-height: 25px;
+}
+
+@media (max-width: 620px) {
     font-size: 14px;
     padding: 2px 10px;
-    line-height: 25px;
   }
 `
 
@@ -86,7 +95,12 @@ export const Input = styled.input`
     left: 5px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 
-    @media (max-width: 480px) {
+    @media (max-width: 720px) {
+      width: 30px;
+      height: 30px;
+    }
+
+    @media (max-width: 620px) {
       width: 20px;
       height: 20px;
     }
@@ -101,7 +115,11 @@ export const Congratulations = styled.div`
       width: 25%;
      }
 
-     @media (max-width: 480px) {
+     @media (max-width: 720px) {
+      font-size: 20px;
+     }
+
+     @media (max-width: 620px) {
       display: none;
       width: 0%;
      }

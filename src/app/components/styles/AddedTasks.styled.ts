@@ -26,6 +26,11 @@ export const AddedTasksContainer = styled.div`
   props.color === "undone" ? "80%": "70%"};
  margin: 0 auto;
 
+ @media (max-width: 720px) {
+    width: ${props => 
+       props.color === "undone" ? "90%": "78%"};
+  }
+
  @media (max-width: 480px) {
     padding: 9px 0;
     line-height: 22px;
@@ -49,12 +54,19 @@ export const TaskName = styled.div`
      props.theme === "original" ? "black" : 
      props.theme === "light" ? "#929aab" : 
      props.theme === "dark" ? "#efdfbf" : "#fffdf6"};
+
+    @media (max-width: 720px) {
+       font-size: 24px;
+       margin-right: 9px;
+       width: ${props => 
+         props.color === "undone" ? "500px": "400px"};
+    }
     
     @media (max-width: 480px) {
-    font-size: 17px;
-    margin-right: 8px;
-    width: ${props => 
-      props.color === "undone" ? "240px": "200px"};
+       font-size: 17px;
+       margin-right: 8px;
+       width: ${props => 
+         props.color === "undone" ? "240px": "200px"};
   }
 `
 
@@ -68,6 +80,12 @@ export const Deadline = styled.input`
      props.theme === "light" ? "#929aab" : 
      props.theme === "dark" ? "black" : "#7cbd1e"};
      border: none;
+
+    @media (max-width: 720px) {
+       font-size: 18px;
+       margin-right: 5px;
+       width: 130px;
+    }
 
     @media (max-width: 480px) {
        font-size: 12px;
