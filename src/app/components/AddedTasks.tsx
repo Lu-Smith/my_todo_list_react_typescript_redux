@@ -1,7 +1,7 @@
 import React, {FC, useState} from 'react';
 import {removeTask} from '../../features/newtaskSlice';
 import {useAppDispatch, useAppSelector} from '../hooks';
-import {AddedTasksContainer, Input, TaskName, Button} from './styles/AddedTasks.styled';
+import {AddedTasksContainer, Input, TaskName, Button, Deadline} from './styles/AddedTasks.styled';
 
 interface Props {
     task: string
@@ -29,7 +29,8 @@ const AddedTasks: FC<Props> = ({task, index}) => {
   return (
     <AddedTasksContainer color={congrats} theme={changethemes}>
           <Input type='checkbox' onChange={handleChange}/>
-          <TaskName theme={changethemes}>{task}</TaskName>
+          <TaskName theme={changethemes} color={congrats}>{task}</TaskName>
+          <Deadline theme={changethemes} type="text" placeholder='deadline...'/>
           <Button theme={changethemes} className="material-symbols-outlined" onClick={handleRemoveClick}>delete</Button>
     </AddedTasksContainer>
   )

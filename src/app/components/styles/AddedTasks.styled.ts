@@ -38,11 +38,24 @@ export const Input = styled.input`
 export const TaskName = styled.div`
     font-size: 30px;
     margin-right: 10px;
-    width: 800px;
+    width: ${props => 
+      props.color === "undone" ? "800px": "600px"};
     color: ${props => 
      props.theme === "original" ? "black" : 
      props.theme === "light" ? "#929aab" : 
      props.theme === "dark" ? "#efdfbf" : "#fffdf6"};
+`
+
+export const Deadline = styled.input`
+    font-size: 20px;
+    padding: 5px 15px;
+    margin-right: 10px;
+    width: 200px;
+    color: ${props => 
+     props.theme === "original" ? "black" : 
+     props.theme === "light" ? "#929aab" : 
+     props.theme === "dark" ? "black" : "#7cbd1e"};
+     border: none;
 `
 
 export const Button = styled.button`
