@@ -18,7 +18,7 @@ export const AddedTasksContainer = styled.div`
  border-bottom: 4px solid ${props => 
   props.theme === "original" ? "#faf6e9" : 
   props.theme === "light" ? "#ffe8d6" : 
-  props.theme === "dark" ? "#163172" : "#1e56a0"};
+  props.theme === "dark" ? "#3b0944" : "#1e56a0"};
  border-left: 4px solid ${props => 
   props.color === "undone" ? "transparent": "#ec729c"};
  border-right: 4px solid ${props => 
@@ -42,7 +42,7 @@ export const TaskName = styled.div`
     color: ${props => 
      props.theme === "original" ? "black" : 
      props.theme === "light" ? "#929aab" : 
-     props.theme === "dark" ? "#00d1ff" : "#fffdf6"};
+     props.theme === "dark" ? "#efdfbf" : "#fffdf6"};
 `
 
 export const Button = styled.button`
@@ -55,7 +55,10 @@ export const Button = styled.button`
     transition: all 200ms ease-in-out;
 
     &:hover {
-        color: #ffc0d0;
+        color: ${props => 
+           props.theme === "original" ? "#ffc0d0" : 
+           props.theme === "light" ? "#929aab" : 
+           props.theme === "dark" ? "#efdfbf" : "#fd0054"};
 
     }
 `

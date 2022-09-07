@@ -30,7 +30,7 @@ const AddedTasks: FC<Props> = ({task, index}) => {
     <AddedTasksContainer color={congrats} theme={changethemes}>
           <Input type='checkbox' onChange={handleChange}/>
           <TaskName theme={changethemes}>{task}</TaskName>
-          <Button className="material-symbols-outlined" onClick={handleRemoveClick}>delete</Button>
+          <Button theme={changethemes} className="material-symbols-outlined" onClick={handleRemoveClick}>delete</Button>
     </AddedTasksContainer>
   )
 }

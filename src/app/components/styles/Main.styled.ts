@@ -21,7 +21,7 @@ export const NewTask = styled.div`
   background: ${props => 
    props.theme === "original" ? "#ffc0d0" : 
    props.theme === "light" ? "#ffe8d6" : 
-   props.theme === "dark" ? "#163172" : "#5e227f"};
+   props.theme === "dark" ? "#5f1854" : "#5e227f"};
   border-top: 10px dotted ${props => 
    props.theme === "original" ? "black" : 
    props.theme === "light" ? "#ffffff" : 
@@ -58,22 +58,22 @@ export const Button = styled.button`
  color: ${props => 
   props.theme === "original" ? "black" : 
   props.theme === "light" ? "#929aab" : 
-  props.theme === "dark" ? "#00d1ff" : "#f8b500"};
+  props.theme === "dark" ? "#efdfbf" : "#f8b500"};
 `
 
 export const TasksList = styled.div`
   margin: 0 auto;
   margin-top: 30px;
-  height: 660px;
+  height: 630px;
   width: 80%;
   border: 10px dotted ${props => 
   props.theme === "original" ? "#efdfbf" : 
   props.theme === "light" ? "white" : 
-  props.theme === "dark" ? "#3d6cb9" : "#d22780"};
+  props.theme === "dark" ? "#5f1854" : "#d22780"};
   background-color: ${props => 
   props.theme === "original" ? "#faf6e9" : 
   props.theme === "light" ? "#ffe8d6" : 
-  props.theme === "dark" ? "#163172" : "#1e56a0"};
+  props.theme === "dark" ? "#3b0944" : "#1e56a0"};
   padding: 30px 0;
   border-radius: 20px;
   overflow-y: scroll;

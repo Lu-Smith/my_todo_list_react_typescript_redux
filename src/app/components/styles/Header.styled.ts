@@ -39,12 +39,12 @@ margin-right: 5px;
 color: ${props => 
 props.theme === "original" ? "black" : 
 props.theme === "light" ? "#929aab" : 
-props.theme === "dark" ? "#00d1ff" : "white"};
+props.theme === "dark" ? "#efdfbf" : "white"};
 cursor: pointer;
 box-shadow: 0 -5px 2px ${props => 
   props.theme === "original" ? "black" : 
   props.theme === "light" ? "#ffe8d6" : 
-  props.theme === "dark" ? "#163172" : "#7cbd1e"};
+  props.theme === "dark" ? "#f5b553" : "#7cbd1e"};
 ;
 
 &:hover {
