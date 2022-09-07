@@ -30,10 +30,16 @@ list-style: none;
 padding: 5px 15px;
 line-height: 30px;
 transition: all 200ms ease-in-out;
-background-color: black;
+background-color: ${props => 
+props.theme === "original" ? "#ffe0e0" : 
+props.theme === "light" ? "#f9f6f7" : 
+props.theme === "dark" ? "black" : "orange"};
 border-radius: 10px;
 margin-right: 5px;
-color: #ffe0e0;
+color: ${props => 
+props.theme === "original" ? "black" : 
+props.theme === "light" ? "#ff971d" : 
+props.theme === "dark" ? "#00d1ff" : "#5e227f"};
 cursor: pointer;
 box-shadow: 0 -5px 2px #ffc0d0;
 ;

@@ -9,6 +9,8 @@ const Main: FC = () => {
     const [createTask, setCreateTask] = useState<string>("");
     const dispatch = useAppDispatch();
     const newtasks = useAppSelector((state) => state.newtask.value);
+    const changethemes = useAppSelector((state) => state.changethemes.value);
+
     
     const handleAddTask = (): void => {
         if(!createTask) return;
