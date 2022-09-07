@@ -2,13 +2,11 @@ import styled from 'styled-components';
 
 
 export const AddedTasksContainer = styled.div`
-
  background: ${props => 
   props.theme === "original" ? "#79d1c3" : 
   props.theme === "light" ? "white" : 
   props.theme === "dark" ? "black" : "#7cbd1e"};
  padding: 10px 0;
- font-size: 20px;
  line-height: 30px;
  display: flex;
  flex-direction: row;
@@ -27,6 +25,13 @@ export const AddedTasksContainer = styled.div`
  width: ${props => 
   props.color === "undone" ? "80%": "70%"};
  margin: 0 auto;
+
+ @media (max-width: 480px) {
+    padding: 9px 0;
+    line-height: 22px;
+    width: ${props => 
+       props.color === "undone" ? "95%": "82%"};
+  }
  `
 
 export const Input = styled.input`
@@ -44,6 +49,13 @@ export const TaskName = styled.div`
      props.theme === "original" ? "black" : 
      props.theme === "light" ? "#929aab" : 
      props.theme === "dark" ? "#efdfbf" : "#fffdf6"};
+    
+    @media (max-width: 480px) {
+    font-size: 17px;
+    margin-right: 8px;
+    width: ${props => 
+      props.color === "undone" ? "240px": "200px"};
+  }
 `
 
 export const Deadline = styled.input`
@@ -56,6 +68,12 @@ export const Deadline = styled.input`
      props.theme === "light" ? "#929aab" : 
      props.theme === "dark" ? "black" : "#7cbd1e"};
      border: none;
+
+    @media (max-width: 480px) {
+       font-size: 12px;
+       margin-right: 0;
+       width: 100px;
+    }
 `
 
 export const Button = styled.button`
@@ -72,6 +90,9 @@ export const Button = styled.button`
            props.theme === "original" ? "#c9fdd7" : 
            props.theme === "light" ? "#929aab" : 
            props.theme === "dark" ? "#efdfbf" : "#fd0054"};
+    }
 
+    @media (max-width: 480px) {
+        font-size: 20px;
     }
 `

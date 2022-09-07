@@ -17,5 +17,10 @@ export const FooterContainer = styled.div`
  a:hover {
     color: ${props => props.color === "allundone" ? "#494949" : "white"};
  }
+
+ @media (max-width: 480px) {
+   font-size: 16px;
+   line-height: 20px;
+ }
 `
 
